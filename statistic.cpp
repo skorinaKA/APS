@@ -251,3 +251,8 @@ void Statistic::addExecStep(step step)
 {
     execStepVector.push_back(step);
 }
+
+
+void Statistic::sortTime() {
+    std::sort(stepVector.begin(), stepVector.end(), [](const step& a, const step& b) {return a.time < b.time; });
+}

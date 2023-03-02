@@ -29,6 +29,8 @@ public:
 
 	void setTotalSimulationTime(double);
 
+	void sortTime();
+
 	int getProcessed();
 	int getProcessed(int);
 	int getRejected();
